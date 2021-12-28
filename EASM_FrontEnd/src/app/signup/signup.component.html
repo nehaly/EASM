@@ -1,0 +1,41 @@
+
+<!-- <div>{{message}}</div> -->
+
+<body>
+<form>
+<fieldset>
+    <legend><h3>Sign up page</h3></legend>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Enter AdminId:</td>
+                <td><input type="text" name="adminId" [(ngModel)]="adminData.adminId" placeholder="Enter Id"></td>
+            </tr>
+            <tr>
+                <td>Enter Firstname:</td>
+                <td><input type="text" name="firstname" [(ngModel)]="adminData.firstname" placeholder="Enter Firstname"></td>
+            </tr>
+            <tr>
+                <td>Enter Lastname:</td>
+                <td><input type="text" name="lastname" [(ngModel)]="adminData.lastname" placeholder="Enter Lastname"></td>
+            </tr>
+            <tr>
+                <td>Enter emailId:</td>
+                <td><input type="text" name="emailId" [(ngModel)]="adminData.emailId" placeholder="Enter EmailId"></td>
+            </tr>
+            <tr>
+                <td>Enter password:</td>
+                <td><input type="password" name="password" [(ngModel)]="adminData.password" placeholder="Enter Password"></td>
+            </tr>
+        </tbody>
+        <div id="buttons">
+            <input type="button" value="Signup" (click)="registerAdmin()" id="signup">
+
+            <input type="button" value="Login" (click)="authenticateAdmin()" id="Login">
+        </div>
+    </table>
+
+</fieldset>
+</form>
+</body>
